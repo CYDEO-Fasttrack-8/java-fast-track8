@@ -7,3 +7,4 @@ out/
 
 ### Mac OS ###
 .DS_Store
+/src/package-info.java

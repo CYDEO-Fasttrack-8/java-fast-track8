@@ -16,7 +16,7 @@ public class StringMethods {
         String s3 = "hello cydeo";
         System.out.println(s3.charAt(0)); //first. h
         System.out.println(s3.charAt(6)); //c
-        System.out.println(s3.charAt(s3.length()-1));// last character o
+        System.out.println(s3.charAt(s3.length() - 1));// last character o
 
         System.out.println(s3.substring(0, 5));//hello
         System.out.println(s3.substring(6)); //cydeo
@@ -26,12 +26,16 @@ public class StringMethods {
         System.out.println(s3.indexOf("java"));//-1 if not found
         System.out.println(s3.lastIndexOf('e'));//9, searches from end and returns index
 
-        System.out.println(s3.toLowerCase() +" - "+s3.toUpperCase());
+        System.out.println(s3.toLowerCase() + " - " + s3.toUpperCase());
 
         System.out.println(s3.replace("cydeo", "world"));
         System.out.println(s3.replace("e", "E"));
 
         String s4 = "AB12C54D3";
-        System.out.println(s4.replaceAll("\\d",""));
+        System.out.println(s4.replaceAll("\\d", ""));
+        System.out.println(s4.replaceAll("[A-Z]+", ""));
+
+        System.out.println(s4.contains("AB"));
+        System.out.println(s4.contains("J"));
     }
 }

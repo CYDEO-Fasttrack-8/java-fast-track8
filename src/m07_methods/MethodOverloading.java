@@ -2,6 +2,12 @@ package m07_methods;
 
 public class MethodOverloading {
 
+    public static void main(String[] args) {
+        //Overloading - two or more methods with SAME name, and DIFFERENT parameters
+        buy("townhome");
+        buy((byte)2);
+    }
+
     // without any overloading:
 
     public static void buyByType(String type) {

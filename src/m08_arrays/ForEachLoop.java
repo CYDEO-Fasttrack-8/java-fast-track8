@@ -13,7 +13,7 @@ public class ForEachLoop {
         for(int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
         }
-        
+
         //3) for each
         for(int n : arr) {
             System.out.println("n = " + n);

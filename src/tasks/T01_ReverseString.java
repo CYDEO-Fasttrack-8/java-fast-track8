@@ -14,7 +14,7 @@ public class T01_ReverseString {
             rev = str.charAt(i) + rev;
         }
         System.out.println("rev = " + rev);
-        
+
         String reversedStr = "";
         for (int i = str.length()-1; i >= 0; i--) {
             reversedStr += str.charAt(i);

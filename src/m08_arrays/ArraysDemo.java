@@ -20,6 +20,15 @@ public class ArraysDemo {
 
         int[] n1 = {1, 2, 3}; // giving the value of the elements
         int[] n2 = new int[4]; // creating a new array with a specific number of elements
+        n2[0] = 100;
+        n2[1] = 150;
+        n2[2] = 432;
+        n2[3] = 555;
+        //n2[4] = 666; //ArrayIndexOutOfBoundsException
+
+        System.out.println(n1[0]);//1
+        System.out.println(n2[1]);//150
+
         int[] n3 = new int[]{10, 9, 8}; // another syntax often seen without the reference. used to quickly define an array type
 
         // arrays can hold both primitive types and object types
@@ -44,9 +53,9 @@ public class ArraysDemo {
 
         // array objects are mutable. only the size is fixed
         int[] num2 = {4, 21, 5};
-        nums[2] = 100;
-        nums[1] = -51;
+        num2[2] = 100;
+        num2[1] = -51;
         System.out.println(Arrays.toString(num2));
-        System.out.println(nums[0]);
+        System.out.println(num2[0]);
     }
 }

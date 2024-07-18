@@ -1,11 +1,37 @@
 package m09_arraylist;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class ArrayListDemo {
+
     public static void main(String[] args) {
 
-        ArrayList<String> groceriesList = new ArrayList<>();
+        int[] nums = {10,44,22};
+        System.out.println(Arrays.toString(nums));
+        //println(nums[0]) => 10
+        //nums[2] = 98;
+        List<Integer> numsList = new ArrayList<>();
+        numsList.add(10);
+        numsList.add(44);
+        numsList.add(22);
+        numsList.add(66);
+        numsList.remove(0);
+        System.out.println(numsList);
+
+        numsList = new LinkedList<>();
+
+        /*
+        Wrapper classes are used to convert a primitive to an object
+        byte -> Byte
+        short -> Short
+        int -> Integer
+        long -> Long
+        float -> Float
+        double -> Double
+        char -> Character
+        boolean -> Boolean
+         */
+        List<String> groceriesList = new ArrayList<>();
 
         System.out.println(groceriesList);
 
@@ -70,7 +96,7 @@ public class ArrayListDemo {
 
 
         // clear(): Removes all elements of the list.
-        // groceriesList.clear();
+        //groceriesList.clear();
         System.out.println(groceriesList);
         System.out.println(groceriesList.isEmpty());
 
@@ -79,8 +105,46 @@ public class ArrayListDemo {
 
         System.out.println(groceriesList);
 
-        groceriesList.removeIf( p -> p.startsWith("A") );
+        groceriesList.removeIf( e -> e.contains("o") || e.contains("O") );
 
         System.out.println(groceriesList);
+        
+        //====================
+
+        List<Integer> myNums = new ArrayList<>(Arrays.asList(5,23,66,1,7,98,4));
+        System.out.println("myNums = " + myNums);
+
+        //1) for loop
+        for (int i = 0; i < myNums.size(); i++) {
+            System.out.print(myNums.get(i) +" ");
+        }
+        System.out.println();
+
+        //2)for each loop
+        for (int each : myNums) {
+            System.out.print(each +" ");
+            //try modify like remove
+//            if (each < 10) { ConcurrentModificationException
+//                myNums.remove(each);
+//            }
+        }
+        System.out.println();
+
+        //3)iterator with while loop
+        Iterator<Integer> it = myNums.iterator();
+        while (it.hasNext()) {
+            int num = it.next();
+            System.out.print(num+" ");
+            if (num < 10) {
+                it.remove();
+            }
+        }
+
+        System.out.println("\nmyNums = " + myNums);
+
+        //4)forEach method
+        myNums.forEach(num -> System.out.print(num +" "));
+        myNums.removeIf(num -> num > 50);
+        System.out.println("\nmyNums = " + myNums);
     }
 }

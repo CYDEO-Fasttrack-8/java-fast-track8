@@ -17,7 +17,7 @@ So expected output :  rabbit   bribe
  */
 public class T09_RemoveIfNotContains {
     public static void main(String[] args) {
-        List<String> words = new ArrayList<>(Arrays.asList("rabbbit" ,  "bribe" ,  "bike"));
+        List<String> words = new ArrayList<>(Arrays.asList("rabbit" ,  "bribe" ,  "bike"));
         String word = "bib";
 
         List<String> filteredWords = new ArrayList<>();
@@ -51,7 +51,6 @@ public class T09_RemoveIfNotContains {
         System.out.println("filteredWords = " + filteredWords);
 
         System.out.println("==========ANOTHER WAY=======================");
-
 
         String givenWord = "bib";
 

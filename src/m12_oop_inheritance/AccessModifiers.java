@@ -16,11 +16,11 @@ public class AccessModifiers {
 }
 
 class OtherClassInSamePackage {
-    void testAccess() {
+    public static void main(String[] args) {
         AccessModifiers obj = new AccessModifiers();
         System.out.println("Public Var: " + obj.publicVar);
         System.out.println("Protected Var: " + obj.protectedVar);
         System.out.println("Default Var: " + obj.defaultVar);
-        // obj.privateVar is not accessible here
+        //obj.privateVar //is not accessible here
     }
 }

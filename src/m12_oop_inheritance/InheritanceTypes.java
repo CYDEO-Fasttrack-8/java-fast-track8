@@ -27,4 +27,4 @@ class MapleTree extends Tree{}
 
 class A {}
 class B {}
-//class C extends A, B {}
+//class C extends A, B {} Error: Cannot extend multiple classes

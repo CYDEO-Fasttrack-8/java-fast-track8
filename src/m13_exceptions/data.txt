@@ -1,0 +1,10 @@
+1.	“New York, USA”
+2.	“Tokyo, Japan”
+3.	“London, UK”
+4.	“Paris, France”
+5.	“Sydney, Australia”
+6.	“Berlin, Germany”
+7.	“Toronto, Canada”
+8.	“Rio de Janeiro, Brazil”
+9.	“Mumbai, India”
+10.	“Cape Town, South Africa”

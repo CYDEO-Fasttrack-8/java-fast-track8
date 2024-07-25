@@ -11,3 +11,11 @@ public class Facebook extends App implements Publisher {
         System.out.println("posting " + item + " to facebook");
     }
 }
+
+class FacebookObject {
+    public static void main(String[] args) {
+        Facebook facebook = new Facebook();
+        facebook.launch();
+        facebook.publish("image");
+    }
+}

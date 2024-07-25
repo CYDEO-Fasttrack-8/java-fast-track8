@@ -9,3 +9,13 @@ public class Discord extends App {
         System.out.println("Launching discord server..");
     }
 }
+
+class AppObjects {
+    public static void main(String[] args) {
+        Discord discord = new Discord();
+        discord.build();
+        discord.launch();
+
+        //App app = new App(); ERROR: Cannot create object of abstract class
+    }
+}

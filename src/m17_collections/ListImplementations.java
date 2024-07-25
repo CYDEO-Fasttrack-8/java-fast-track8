@@ -55,6 +55,5 @@ public class ListImplementations {
         System.out.println(stack.pop() + " is removed from top of stack");
         System.out.println(stack.peek() + " is now on top of the stack");
 
-        System.out.println(stack.get(0));
     }
 }

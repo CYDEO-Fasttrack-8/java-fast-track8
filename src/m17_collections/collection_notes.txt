@@ -1,0 +1,15 @@
+
+
+set is collection of unique elements
+- does not allow duplicates
+- does not have indexes since it is unordered data structure
+
+Implementations:
+    HashSet -> default usage
+    LinkedHashSet -> keeps the insertion order
+HashSet -> internally uses KEYs of HASHMAP.
+LinkedHashSet -> keeps insertions order. Extends HashSet.
+    Internally using LinkedHashMap's keys
+TreeSet -> implements SortedSet interface
+    - maintains natural order (sorted)
+    - based on Keys of TreeMap

@@ -1,0 +1,17 @@
+Interface vs Abstract class:
+- both are used to achieve abstraction in java
+- Cannot create objects from both
+- class can extend only one abstract class
+	and can implement multiple interfaces
+	METHODS:
+- abstract class can have abstract,non abstract, static , constructor methods
+- interface can have abstract, default and static methods
+
+VARIABLES:
+- abstract class can have all types of variables. private or public, static etc
+- interfaces can only have public static final variables
+
+ACCESS modifiers:
+- abstract class can use all access modifiers:	
+	public, protected, default, private
+- interface can only use public	

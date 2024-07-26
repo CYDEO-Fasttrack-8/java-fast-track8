@@ -1,9 +1,6 @@
 package m17_collections;
 
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 public class SetImplementations {
     public static void main(String[] args) {
@@ -43,5 +40,17 @@ public class SetImplementations {
         //set3.get(0);
         set3.forEach(e -> System.out.println("e = " + e));
         System.out.println("set3.size() = " + set3.size());
+
+        //convert list to set. remove duplicates from arraylist
+        List<Integer> nums = new ArrayList<>(List.of(44, 44, 5, 5, 3, 3));
+        Set<Integer> numsSet = new HashSet<>(nums);
+        System.out.println("numsSet = " + numsSet);
+
+        String word = "aaabbbcccddd";
+        //split word and covert to String[] array
+        //convert String[] to ArrayList<String> using Arrays.asList
+        //pass list object to HashSet constructor
+        Set<String> wordSet = new HashSet<>(Arrays.asList(word.split("")));
+        System.out.println("wordSet = " + wordSet);
     }
 }

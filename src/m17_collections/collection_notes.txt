@@ -13,3 +13,19 @@ LinkedHashSet -> keeps insertions order. Extends HashSet.
 TreeSet -> implements SortedSet interface
     - maintains natural order (sorted)
     - based on Keys of TreeMap
+
+Map -> is Key+Value pair data structure
+HashMap -> default implementation. Key+Value format. does not remember insertion order
+LinkedHashMap => maintains insertion order
+TreeMap also implements SortedMap, so the keys are sorted in natural order
+    -> does not allow null value
+
+HashTable: a synchronized legacy class. The order of entries is random and null is not
+allowed as a key or value
+implements Map and extends Dictionary
+HashMap vs HashTable:
+    -> Both are implementations of Map interface and KEY+VALUE data structure
+    -> HashMap is not thread safe
+    -> HashTable is thread safe
+    -> HashMap allows 1 null key and any number of null values
+    -> HashTable does not allow any null key or value

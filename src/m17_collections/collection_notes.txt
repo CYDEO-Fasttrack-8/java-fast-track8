@@ -29,3 +29,8 @@ HashMap vs HashTable:
     -> HashTable is thread safe
     -> HashMap allows 1 null key and any number of null values
     -> HashTable does not allow any null key or value
+
+Queue is based on First In - First Out structure
+Implementing classes:
+    PriorityQueue -> maintains priority ordering
+    ArrayDeque -> we can access elements from both sides.Also implements Deque interface

@@ -46,11 +46,11 @@ public class SetImplementations {
         Set<Integer> numsSet = new HashSet<>(nums);
         System.out.println("numsSet = " + numsSet);
 
-        String word = "aaabbbcccddd";
+        String word = "aaabbbcccdddD";
         //split word and covert to String[] array
         //convert String[] to ArrayList<String> using Arrays.asList
         //pass list object to HashSet constructor
-        Set<String> wordSet = new HashSet<>(Arrays.asList(word.split("")));
+        Set<String> wordSet = new LinkedHashSet<>(Arrays.asList(word.split("")));
         System.out.println("wordSet = " + wordSet);
     }
 }
